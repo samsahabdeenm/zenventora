@@ -1,16 +1,22 @@
 # Zenventora
 
-Zenventora is a product-focused partnership agency helping SaaS startups, software companies, and digital solution providers reach suitable business customers through market outreach, sales support, demo coordination, onboarding support, and partner-led growth.
+Zenventora is a product-focused partnership and development agency helping SaaS startups, software companies, and businesses with website development, web application development, mobile app development, SaaS implementation support, market outreach, sales support, demo coordination, onboarding support, and partner-led growth.
 
 ## Website
-- Canonical URL: https://zenventora.in/
-- Privacy Policy: https://zenventora.in/privacy-policy.html
-- Terms and Conditions: https://zenventora.in/terms-and-conditions.html
-- Contact Form: https://zenventora.in/contact.html
-- Primary language: English
+- [Official website](https://zenventora.in/)
+- [Contact Zenventora](https://zenventora.in/contact.html)
+- [Privacy Policy](https://zenventora.in/privacy-policy.html)
+- [Terms and Conditions](https://zenventora.in/terms-and-conditions.html)
+- [Sitemap](https://zenventora.in/sitemap.xml)
+- [Robots.txt](https://zenventora.in/robots.txt)
+- Primary language: English (India)
 - Service area: India
 
 ## Core Topics
+- Website development
+- Web application development
+- Mobile app development
+- Android and iOS app development coordination
 - Product sales support
 - SaaS startup growth support
 - Customer acquisition support
@@ -18,23 +24,23 @@ Zenventora is a product-focused partnership agency helping SaaS startups, softwa
 - Demo and onboarding coordination
 - Business solution guidance
 - Partner-led growth
+- SaaS implementation and digital solution delivery
 
-## Contact Placeholders
-- Phone: 8072009245
-- WhatsApp: https://wa.me/918072009245
-- Email: support@zenventora.in
-- Sales: sales@zenventora.in
-
+## Contact
+- [Email support@zenventora.in](mailto:support@zenventora.in)
+- [Email sales@zenventora.in](mailto:sales@zenventora.in)
+- [WhatsApp Zenventora](https://wa.me/918072009245)
+- Phone: +91 80720 09245
 
 ## Social Links
-- Instagram: https://www.instagram.com/zenventora/
-- Facebook: https://www.facebook.com/profile.php?id=61591519560721
-- X: https://x.com/zenventora
-- YouTube: https://www.youtube.com/@zenventora
-- LinkedIn: https://www.linkedin.com/company/zenventora/
+- [Instagram](https://www.instagram.com/zenventora/)
+- [Facebook](https://www.facebook.com/profile.php?id=61591519560721)
+- [X](https://x.com/zenventora)
+- [YouTube](https://www.youtube.com/@zenventora)
+- [LinkedIn](https://www.linkedin.com/company/zenventora/)
 
 ## Product Partners
-- Carousels.in: AI carousel creation for LinkedIn and Instagram content.
-- Zhat: AI-agentic help desk software for support automation.
-- VDCian: Creative digital services for branding, websites, UX, SEO, and SaaS development.
-- Cool Vibrant: Digital brand presence for farm, lifestyle, and sustainable living content.
+- [Carousels.in](https://carousels.in/): AI carousel creation for LinkedIn and Instagram content.
+- [Zhat](https://zhat.in/): AI-agentic help desk software for support automation.
+- [VDCian](https://www.vdcian.com/): A Zenventora-connected creative digital delivery partner for branding, websites, UX, SEO, and SaaS development support.
+- [Cool Vibrant](https://coolvibrant.in/): Digital brand presence for farm, lifestyle, and sustainable living content.
