@@ -1,6 +1,6 @@
 # Zenventora
 
-Zenventora is a product-focused partnership agency helping SaaS startups, software companies, and digital solution providers reach suitable business customers through market outreach, sales support, demo coordination, onboarding support, and partner-led growth.
+Zenventora is a product-focused partnership and development agency helping SaaS startups, software companies, and businesses with website development, web application development, mobile app development, SaaS implementation support, market outreach, sales support, demo coordination, onboarding support, and partner-led growth.
 
 ## Website
 - [Official website](https://zenventora.in/)
@@ -13,6 +13,10 @@ Zenventora is a product-focused partnership agency helping SaaS startups, softwa
 - Service area: India
 
 ## Core Topics
+- Website development
+- Web application development
+- Mobile app development
+- Android and iOS app development coordination
 - Product sales support
 - SaaS startup growth support
 - Customer acquisition support
@@ -20,6 +24,7 @@ Zenventora is a product-focused partnership agency helping SaaS startups, softwa
 - Demo and onboarding coordination
 - Business solution guidance
 - Partner-led growth
+- SaaS implementation and digital solution delivery
 
 ## Contact
 - [Email support@zenventora.in](mailto:support@zenventora.in)
@@ -37,5 +42,5 @@ Zenventora is a product-focused partnership agency helping SaaS startups, softwa
 ## Product Partners
 - [Carousels.in](https://carousels.in/): AI carousel creation for LinkedIn and Instagram content.
 - [Zhat](https://zhat.in/): AI-agentic help desk software for support automation.
-- [VDCian](https://www.vdcian.com/): Creative digital services for branding, websites, UX, SEO, and SaaS development.
+- [VDCian](https://www.vdcian.com/): A Zenventora-connected creative digital delivery partner for branding, websites, UX, SEO, and SaaS development support.
 - [Cool Vibrant](https://coolvibrant.in/): Digital brand presence for farm, lifestyle, and sustainable living content.
