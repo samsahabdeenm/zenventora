@@ -100,7 +100,7 @@ button,input,select,textarea {
 }
 
 .nav-menu a:hover {
-    color: #fff;
+    color: var(--teal);
 }
 
 .nav-toggle {
