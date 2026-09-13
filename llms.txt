@@ -1,6 +1,6 @@
 # Zenventora
 
-Zenventora is a product-focused partnership and development agency helping SaaS startups, software companies, and businesses with website development, web application development, mobile app development, SaaS implementation support, market outreach, sales support, demo coordination, onboarding support, and partner-led growth.
+Zenventora is an India-based product-focused partnership and development agency. It helps SaaS startups, software companies, and businesses with affordable custom website development, web application development, mobile app development, website maintenance, SEO, AI search visibility foundations, digital marketing, social media support, SaaS implementation support, market outreach, sales support, demo coordination, onboarding support, and partner-led growth.
 
 ## Website
 - [Official website](https://zenventora.in/)
@@ -13,7 +13,13 @@ Zenventora is a product-focused partnership and development agency helping SaaS 
 - Service area: India
 
 ## Core Topics
-- Website development
+- Affordable custom website development
+- Business websites, landing pages, portfolios, and web applications
+- Website maintenance, content updates, technical upkeep, and performance reviews
+- SEO foundations and technical SEO
+- Answer engine optimization (AEO), generative engine optimization (GEO), and AI search visibility foundations
+- Digital marketing support
+- Social media profile setup, content direction, and handling for LinkedIn, X, Threads, Instagram, YouTube, and Facebook
 - Web application development
 - Mobile app development
 - Android and iOS app development coordination
@@ -25,6 +31,11 @@ Zenventora is a product-focused partnership and development agency helping SaaS 
 - Business solution guidance
 - Partner-led growth
 - SaaS implementation and digital solution delivery
+
+## Website, SEO, and AI Discovery Services
+Zenventora can coordinate a business's online presence from planning through delivery and ongoing support. This includes custom websites built around the customer's requirement and budget, post-launch maintenance, SEO, digital marketing, and social media support.
+
+For search and AI-powered discovery, Zenventora can improve clarity, site structure, helpful service content, FAQs, metadata, and structured data so search engines and AI systems can better understand a business. Zenventora does not guarantee a particular Google ranking, AI-generated answer, or placement on a third-party platform, because those results are controlled by the platforms.
 
 ## Contact
 - [Email support@zenventora.in](mailto:support@zenventora.in)
