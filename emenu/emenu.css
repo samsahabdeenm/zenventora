@@ -147,3 +147,23 @@
     max-width: min(148px, 39vw) !important;
   }
 }
+
+
+/* Final eMenu header width correction: match the shared header container exactly */
+.emenu-page .site-header .nav.container {
+  width: min(1280px, calc(100% - 48px)) !important;
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box;
+}
+@media (max-width: 1100px) {
+  .emenu-page .site-header .nav.container {
+    width: calc(100% - 36px) !important;
+  }
+}
+@media (max-width: 560px) {
+  .emenu-page .site-header .nav.container {
+    width: calc(100% - 28px) !important;
+  }
+}
