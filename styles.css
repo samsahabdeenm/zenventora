@@ -1782,3 +1782,49 @@ img, video, iframe, canvas, svg { max-width: 100%; }
   column-gap: 16px;
   row-gap: 14px;
 }
+
+
+/* Refine the homepage partner strip: balanced spacing, no clipped edges */
+.hero-bottom-strip {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  padding: 22px clamp(16px, 3vw, 36px) 26px;
+  gap: clamp(12px, 1.8vw, 22px);
+  line-height: 1.5;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.hero-bottom-strip > span {
+  min-width: 0;
+}
+.hero-bottom-strip > a {
+  flex: 0 0 auto;
+  gap: 10px;
+  white-space: nowrap;
+}
+.hero-bottom-strip > a img {
+  flex: 0 0 25px;
+}
+.hero-bottom-strip > i {
+  flex: 0 0 4px;
+}
+@media (max-width: 720px) {
+  .hero-bottom-strip {
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 18px 0 22px;
+    font-size: .78rem;
+  }
+  .hero-bottom-strip > span:first-child {
+    flex-basis: 100%;
+    text-align: left;
+  }
+  .hero-bottom-strip > i {
+    display: none;
+  }
+  .hero-bottom-strip > span:not(:first-child) {
+    flex: 1 1 135px;
+    text-align: left;
+  }
+}
