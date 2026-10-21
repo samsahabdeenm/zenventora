@@ -1767,3 +1767,18 @@ img, video, iframe, canvas, svg { max-width: 100%; }
     top: auto;
   }
 }
+
+
+/* Global readability and spacing refinements from visual review */
+.site-footer .footer-grid p {
+  color: #cbd8e7;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 42rem;
+}
+.site-footer .footer-grid p + p { margin-top: 12px; }
+.hero-actions,
+.cta-area {
+  column-gap: 16px;
+  row-gap: 14px;
+}
