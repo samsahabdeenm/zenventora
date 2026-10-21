@@ -167,3 +167,19 @@
     width: calc(100% - 28px) !important;
   }
 }
+
+
+/* eMenu hero CTA: keep the inline arrow only; remove duplicate decorative pseudo-arrow */
+.emenu-page .hero-actions .btn::after,
+.emenu-page .hero-actions .btn-primary::after,
+.emenu-page .hero-actions .btn-secondary::after {
+  content: none !important;
+  display: none !important;
+}
+.emenu-page .hero-actions .btn {
+  gap: 12px;
+}
+.emenu-page .hero-actions .btn > span[aria-hidden="true"] {
+  display: inline-block;
+  margin-left: 2px;
+}
