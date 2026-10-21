@@ -1510,3 +1510,90 @@ textarea {
 
 .pos-contact-link { text-align:center; }
 }
+
+
+/* UI audit fixes: layout, responsive spacing, and accessible interaction states */
+html { scroll-padding-top: 92px; }
+body { overflow-wrap: anywhere; }
+img, svg, video, canvas { max-width: 100%; }
+section[id] { scroll-margin-top: 92px; }
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid rgba(14,165,164,.55);
+  outline-offset: 3px;
+}
+.btn { min-height: 46px; text-align: center; }
+.site-header .nav { position: relative; }
+.nav-menu > a:not(.btn), .nav-dropdown > summary { min-height: 44px; display: inline-flex; align-items: center; }
+.nav-dropdown-menu a { min-height: 42px; display: flex; align-items: center; }
+.hero-redesign .hero-grid { min-width: 0; }
+.hero-copy, .hero-art-wrap { min-width: 0; }
+.hero-art { height: auto; }
+.hero-bottom-strip { min-width: 0; }
+.zoho-partner-card {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr) 165px;
+  align-items: center;
+  min-width: 0;
+  padding: clamp(24px, 4vw, 46px);
+  border-radius: 30px;
+}
+.zoho-brand-lockup { display: flex; align-items: center; justify-content: center; min-width: 0; }
+.zoho-brand-lockup img { display: block; width: 100%; max-width: 150px; height: auto; }
+.zoho-partner-copy { min-width: 0; }
+.zoho-partner-copy h2 { overflow-wrap: normal; }
+.zoho-pos-experience { position: relative; }
+.pos-feature-layout, .pos-feature-side, .pos-feature-card, .pos-feature-main { min-width: 0; }
+.pos-feature-card, .pos-feature-main { overflow-wrap: anywhere; }
+.partner-grid-featured { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-inline: auto; }
+.partner-card-featured { min-width: 0; height: 100%; }
+.partner-card-featured .partner-logo { display: flex; align-items: center; min-height: 100px; }
+.partner-card-featured .partner-logo img { width: auto; max-width: min(100%, 190px); max-height: 72px; object-fit: contain; }
+.contact-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+.contact-grid > * { min-width: 0; }
+.enquiry-card { position: static; }
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; }
+.steps article { width: auto; max-width: none; min-width: 0; height: 100%; }
+.customer-card > div { max-width: 68%; min-width: 0; }
+.lead-form > * { min-width: 0; }
+.floating-cta { max-width: calc(100vw - 24px); }
+.footer-grid > * { min-width: 0; }
+@media (min-width: 961px) and (max-width: 1120px) {
+  .nav-dropdown { display: block; width: 100%; }
+  .nav-dropdown > summary { display: flex; width: 100%; padding: 10px 12px; }
+  .nav-dropdown-menu { position: static; min-width: 0; box-shadow: none; border: 0; border-left: 2px solid var(--line); border-radius: 0; margin: 0 0 8px 8px; padding: 2px 8px; }
+  .nav-dropdown-menu a { white-space: normal; }
+}
+@media (max-width: 960px) {
+  .zoho-partner-card { grid-template-columns: minmax(0, 1fr); }
+  .zoho-brand-lockup { justify-content: flex-start; }
+  .zoho-brand-lockup img { width: 138px; }
+  .contact-grid { grid-template-columns: minmax(0, 1fr); }
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .customer-card > div { max-width: 100%; }
+}
+@media (max-width: 720px) {
+  .partner-grid-featured { grid-template-columns: minmax(0, 1fr); }
+  .steps { grid-template-columns: minmax(0, 1fr); }
+  .hero-redesign .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .hero-redesign h1 { overflow-wrap: normal; }
+  .pos-feature-side { grid-template-columns: minmax(0, 1fr); }
+  .pos-capability-band { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pos-cta-bar > div:first-child { align-items: flex-start; }
+  .contact-grid { gap: 24px; }
+  .footer-grid { gap: 24px; }
+}
+@media (max-width: 480px) {
+  .container { width: min(100% - 28px, 1120px); }
+  .hero-redesign h1 { font-size: clamp(2.45rem, 11vw, 3.4rem); }
+  .hero-float-note { max-width: calc(100% - 10px); }
+  .hero-art-caption { max-width: 70%; text-align: right; }
+  .zoho-partner-card { padding: 22px; border-radius: 22px; }
+  .pos-feature-main { min-height: 0; }
+  .pos-mini-flow { margin-top: 20px; }
+  .lead-form { grid-template-columns: minmax(0, 1fr); }
+  .lead-form .full { grid-column: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
