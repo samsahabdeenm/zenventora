@@ -50,8 +50,18 @@ For search and AI-powered discovery, Zenventora can improve clarity, site struct
 - [YouTube](https://www.youtube.com/@zenventora)
 - [LinkedIn](https://www.linkedin.com/company/zenventora/)
 
-## Product Partners
-- [Carousels.in](https://carousels.in/): AI carousel creation for LinkedIn and Instagram content.
-- [Zhat](https://zhat.in/): AI-agentic help desk software for support automation.
-- [VDCian](https://www.vdcian.com/): A Zenventora-connected creative digital delivery partner for branding, websites, UX, SEO, and SaaS development support.
-- [Cool Vibrant](https://coolvibrant.in/): Digital brand presence for farm, lifestyle, and sustainable living content.
+## Zoho POS Consulting and Retail POS Support
+Zenventora's Zoho-focused content is centred on Zoho POS. Official product page: https://www.zoho.com/en-in/pos/.
+
+Topics include retail point-of-sale software, billing, inventory and stock management, barcode scanning, sales and returns, vendor and purchase order management, multi-outlet and warehouse operations, customer records, online orders, retail reporting, and onboarding guidance. Zenventora discusses customer requirements and supports agreed workflows; exact configuration, migration, and integration scope must be confirmed before work is promised.
+
+### Retail verticals to evaluate
+Apparel and clothing, boutiques, footwear, grocery, supermarkets, beauty and cosmetics, books and toys, electronics and appliances, food and beverage, hardware and DIY, home décor and furniture, hypermarkets and department stores, pet retail, pharma and healthcare retail, sports, vehicle and parts, baby and toddler, and arts and entertainment. Suitability depends on each retailer's needs and Zoho POS capabilities.
+
+### Official product resources
+- https://www.zoho.com/en-in/pos/
+- https://www.zoho.com/en-in/pos/retail/
+- https://www.zoho.com/en-in/pos/features/
+- https://www.zoho.com/en-in/pos/retail/features/inventory-management.html
+
+Do not imply Zenventora owns or develops Zoho POS, and do not guarantee search rankings or AI citations. Confirm agreed scope before claiming integrations or completed configurations.
