@@ -1970,3 +1970,141 @@ img, video, iframe, canvas, svg { max-width: 100%; }
   .zoho-partner-spotlight .zoho-partner-copy .hero-actions { flex-direction: column; align-items: stretch; }
   .zoho-partner-spotlight .zoho-partner-copy .hero-actions .btn { width: 100%; }
 }
+
+
+/* Zenventora design system refresh: consistent surfaces, icons, banners and readable type */
+:root {
+  --zv-ink: #10243a;
+  --zv-muted: #536b80;
+  --zv-line: #dce8f1;
+  --zv-teal: #0b9f9b;
+  --zv-blue: #104c73;
+  --zv-soft: #f3f9fc;
+}
+html { scroll-behavior: smooth; }
+body { color: var(--zv-ink); }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+:where(.section, section)[id] { scroll-margin-top: 96px; }
+:where(.card, .partner-card, .service-list article, .steps article, .workflow-grid article) {
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+:where(.card, .partner-card, .service-list article, .steps article, .workflow-grid article):hover {
+  border-color: #b9d9e7;
+  box-shadow: 0 16px 38px rgba(15, 54, 82, .08);
+}
+:where(.card, .workflow-grid article) .icon {
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  border: 1px solid #d5eeeb;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #e9fbf8, #f1f7ff);
+  color: #087f80;
+  font-size: 1.35rem;
+}
+:where(.btn, button, summary, a) { -webkit-tap-highlight-color: transparent; }
+:where(.btn, button):focus-visible, a:focus-visible, summary:focus-visible {
+  outline: 3px solid rgba(14, 165, 164, .48);
+  outline-offset: 3px;
+}
+.hero-actions { align-items: center; gap: 14px 16px; }
+.hero-actions .btn { min-width: 0; }
+.site-footer .footer-grid p {
+  color: #cbd8e7;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+/* Home hero: add a softly framed visual stage without competing with the illustration */
+.hero-redesign .hero-art-wrap {
+  padding: 20px;
+  border: 1px solid rgba(202, 224, 236, .8);
+  border-radius: 34px;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.88), rgba(241,251,250,.8)),
+    url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=85") center/cover;
+  box-shadow: 0 24px 64px rgba(14, 56, 82, .08);
+}
+.hero-redesign .hero-art { width: 100%; height: auto; }
+
+/* Shared themed hero image banners for product/service pages */
+.website-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-top: clamp(72px, 8vw, 112px);
+}
+.website-hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: min(48%, 700px);
+  height: 100%;
+  opacity: .12;
+  background-position: center;
+  background-size: cover;
+  mask-image: linear-gradient(90deg, transparent, #000 32%);
+  pointer-events: none;
+}
+.online-solutions-page:not(.website-page) .website-hero::before {
+  background-image: url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85");
+}
+.website-page .website-hero::before {
+  background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85");
+}
+.emenu-page .hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 85% 18%, rgba(15, 159, 155, .13), transparent 27%),
+    linear-gradient(180deg, #f5fbfd 0%, #fff 80%);
+}
+.emenu-page .customer-menu-showcase {
+  background-image:
+    linear-gradient(145deg, rgba(8, 36, 57, .10), rgba(10, 152, 145, .12)),
+    url("https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=85");
+  background-size: cover;
+  background-position: center;
+}
+.emenu-page .customer-menu-showcase .phone-menu { box-shadow: 0 28px 65px rgba(5, 25, 43, .24); }
+.webform-page .webform-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(201, 222, 235, .8);
+  background: linear-gradient(120deg, #f2f8fc 0%, #fff 65%, #f0fbf9 100%);
+}
+.webform-page .webform-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: min(48%, 620px);
+  height: 100%;
+  opacity: .14;
+  background-position: center;
+  background-size: cover;
+  mask-image: linear-gradient(90deg, transparent, #000 35%);
+  pointer-events: none;
+}
+.contact-page .webform-hero::after,
+.partner-page .webform-hero::after { background-image: url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=80"); }
+.online-enquiry-page .webform-hero::after { background-image: url("https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1000&q=80"); }
+.website-enquiry-page .webform-hero::after { background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80"); }
+.emenu-demo-page .webform-hero::after { background-image: url("https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80"); }
+@media (max-width: 760px) {
+  .hero-redesign .hero-art-wrap { padding: 10px; border-radius: 24px; }
+  .website-hero::before, .webform-page .webform-hero::after { width: 100%; opacity: .07; mask-image: linear-gradient(180deg, #000, transparent 85%); }
+  .hero-actions { gap: 12px; }
+}
