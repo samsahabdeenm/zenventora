@@ -1748,9 +1748,6 @@ img, video, iframe, canvas, svg { max-width: 100%; }
   top: 100px;
   align-self: flex-start;
   min-width: 0;
-  max-height: calc(100vh - 124px);
-  overflow-y: auto;
-  overscroll-behavior: contain;
 }
 @media (max-width: 960px) {
   .contact-grid {
@@ -1768,7 +1765,5 @@ img, video, iframe, canvas, svg { max-width: 100%; }
   .enquiry-card {
     position: static;
     top: auto;
-    max-height: none;
-    overflow: visible;
   }
 }
