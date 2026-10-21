@@ -183,3 +183,13 @@
   display: inline-block;
   margin-left: 2px;
 }
+
+
+/* Do not force logo width or height in the eMenu header */
+.emenu-page .site-header .emenu-brand .brand-logo,
+.emenu-page .site-header .brand .brand-logo {
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+}
