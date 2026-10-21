@@ -373,7 +373,7 @@
 .online-solutions-page .website-hero-panel::before {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   inset: 0 0 auto;
   height: 164px;
   background-position: center 44%;
