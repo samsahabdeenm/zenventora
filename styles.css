@@ -2326,3 +2326,122 @@ p { text-wrap: pretty; }
   .emenu-page .hero-copy h1 { font-size: clamp(2.55rem, 11vw, 3.5rem); }
   .emenu-page .hero-panel.customer-menu-showcase { min-height: 470px; padding: 14px; border-radius: 22px; }
 }
+
+
+/* Long-page visual rhythm: editorial sections become designed product experiences, not blog blocks */
+.section-heading {
+  max-width: 820px;
+  margin-inline: auto;
+  margin-bottom: clamp(26px, 4vw, 44px);
+  text-align: center;
+}
+.section-heading h2 {
+  margin-bottom: 14px;
+  font-size: clamp(2rem, 3.2vw, 3.1rem);
+  line-height: 1.08;
+  letter-spacing: -.045em;
+  text-wrap: balance;
+}
+.section-heading p {
+  max-width: 680px;
+  margin-inline: auto;
+  color: #607489;
+  font-size: 1.04rem;
+  line-height: 1.8;
+}
+#home ~ .section, main > .section {
+  padding-block: clamp(54px, 7vw, 94px);
+}
+#home ~ .section.soft-bg,
+main > .section.soft-bg {
+  background:
+    radial-gradient(ellipse at 8% 0%, rgba(14,165,164,.055), transparent 34%),
+    linear-gradient(180deg, #f5f9fc 0%, #f8fbfd 100%);
+}
+#home ~ .section:not(.soft-bg):not(.zoho-partner-section):not(.contact-section),
+main > .section:not(.soft-bg) {
+  background-color: #fff;
+}
+.web-service-card, .vertical-card, .capability-grid > *, .platform-grid article,
+.startup-grid > *, .steps > *, .workflow-grid article, .card-grid > .card,
+.upload-menu-card, .pricing-card, .customer-card, .pos-feature-card {
+  border: 1px solid #dfe9f1;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(15, 49, 75, .045);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.web-service-card:hover, .vertical-card:hover, .capability-grid > *:hover,
+.platform-grid article:hover, .startup-grid > *:hover, .steps > *:hover,
+.workflow-grid article:hover, .card-grid > .card:hover, .upload-menu-card:hover,
+.pricing-card:hover, .customer-card:hover, .pos-feature-card:hover {
+  transform: translateY(-4px);
+  border-color: #b8d9e5;
+  box-shadow: 0 20px 42px rgba(15, 49, 75, .09);
+}
+.web-service-card, .vertical-card, .capability-grid > *, .platform-grid article,
+.startup-grid > *, .steps > *, .workflow-grid article, .card-grid > .card,
+.upload-menu-card, .pricing-card, .customer-card, .pos-feature-card {
+  padding: clamp(20px, 2.3vw, 30px);
+}
+.web-service-card h3, .vertical-card h3, .capability-grid h3,
+.platform-grid h3, .startup-grid h3, .steps h3, .workflow-grid h3,
+.card-grid h3, .upload-menu-card h3, .pricing-card h3, .customer-card h3 {
+  letter-spacing: -.025em;
+  line-height: 1.25;
+}
+.web-service-card > .icon, .vertical-card > .icon, .capability-grid .icon,
+.platform-grid .icon, .startup-grid .icon, .steps .icon, .workflow-grid .icon,
+.card-grid .icon, .upload-menu-card .icon, .pos-feature-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  border: 1px solid #d3eeea;
+  background: linear-gradient(145deg, #e5faf5, #eff6ff);
+  color: #087f80;
+  font-size: 1.4rem;
+}
+.website-intro, .intro {
+  position: relative;
+}
+.website-intro > .container, .intro > .container {
+  max-width: 1120px;
+}
+.website-intro p, .intro p { line-height: 1.8; }
+.search-pill-grid { gap: 10px; }
+.search-pill-grid > * {
+  border: 1px solid #d9e8f1;
+  border-radius: 999px;
+  background: #f8fbfd;
+  padding: 10px 15px;
+}
+.pricing-card { overflow: hidden; }
+.pricing-card .btn { margin-top: 16px; }
+.faq-list details {
+  border: 1px solid #dfe9f1;
+  border-radius: 16px;
+  background: #fff;
+  margin-bottom: 12px;
+  padding: 18px 20px;
+}
+.faq-list summary { font-weight: 750; line-height: 1.5; }
+.customer-band {
+  background:
+    radial-gradient(ellipse at 85% 20%, rgba(14,165,164,.22), transparent 34%),
+    linear-gradient(125deg, #0b2440 0%, #104c73 60%, #087f80 100%) !important;
+  color: #fff;
+}
+.customer-band h2, .customer-band h3 { color: #fff; }
+.customer-band p { color: #d5e4ee; }
+.customer-band .btn-secondary { color: #123b5e; background: #fff; border-color: #fff; }
+@media (max-width: 700px) {
+  #home ~ .section, main > .section { padding-block: 44px; }
+  .section-heading { margin-bottom: 24px; text-align: left; }
+  .section-heading p { margin-left: 0; }
+  .web-service-card, .vertical-card, .capability-grid > *, .platform-grid article,
+  .startup-grid > *, .steps > *, .workflow-grid article, .card-grid > .card,
+  .upload-menu-card, .pricing-card, .customer-card, .pos-feature-card { padding: 20px; }
+}
