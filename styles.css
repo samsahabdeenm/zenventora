@@ -2044,7 +2044,7 @@ p { text-wrap: pretty; }
 .website-hero::before {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: 0;
   right: 0;
   width: min(48%, 700px);
@@ -2087,7 +2087,7 @@ p { text-wrap: pretty; }
 .webform-page .webform-hero::after {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: 0;
   right: 0;
   width: min(48%, 620px);
@@ -2108,3 +2108,6 @@ p { text-wrap: pretty; }
   .website-hero::before, .webform-page .webform-hero::after { width: 100%; opacity: .07; mask-image: linear-gradient(180deg, #000, transparent 85%); }
   .hero-actions { gap: 12px; }
 }
+
+.website-hero-grid, .webform-page .webform-hero > .container { position: relative; z-index: 1; }
+.webform-page .webform-hero::after { opacity: .2; }
