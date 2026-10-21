@@ -3176,3 +3176,37 @@ body.online-solutions-page:not(.website-page) .website-hero-panel > * {
   .customer-band .customer-card .btn::before,
   .customer-band .customer-card .btn-light::before { top: -29px; }
 }
+
+
+/* Clean hero artwork for Website and Online Solutions pages — no text/cards on the images */
+.online-solutions-page.website-page .website-hero-panel.website-hero-image {
+  min-height: clamp(430px, 43vw, 570px);
+  background-image: url("https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1600&q=90") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  border: 1px solid rgba(255,255,255,.8);
+  border-radius: 30px;
+  box-shadow: 0 28px 70px rgba(10, 41, 65, .18);
+}
+.online-solutions-page:not(.website-page) .website-hero-panel.online-solutions-hero-image {
+  min-height: clamp(430px, 43vw, 570px);
+  background-image: url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=90") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  border: 1px solid rgba(255,255,255,.8);
+  border-radius: 30px;
+  box-shadow: 0 28px 70px rgba(10, 41, 65, .18);
+}
+@media (max-width: 900px) {
+  .online-solutions-page.website-page .website-hero-panel.website-hero-image,
+  .online-solutions-page:not(.website-page) .website-hero-panel.online-solutions-hero-image {
+    min-height: 400px;
+  }
+}
+@media (max-width: 560px) {
+  .online-solutions-page.website-page .website-hero-panel.website-hero-image,
+  .online-solutions-page:not(.website-page) .website-hero-panel.online-solutions-hero-image {
+    min-height: 300px;
+    border-radius: 22px;
+  }
+}
