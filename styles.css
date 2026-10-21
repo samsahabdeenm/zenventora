@@ -3246,3 +3246,102 @@ body.online-solutions-page:not(.website-page) .website-hero-panel > * {
   display: none !important;
   content: none !important;
 }
+
+
+/* Shared header system — identical container width, height, logo scale and alignment across all pages */
+.site-header {
+  width: 100%;
+  min-height: 0;
+  background: rgba(255,255,255,.94);
+  border-bottom: 1px solid #e2eaf1;
+  box-shadow: 0 4px 20px rgba(15, 43, 66, .035);
+}
+.site-header .nav.container {
+  box-sizing: border-box;
+  width: min(1280px, calc(100% - 48px)) !important;
+  max-width: 1280px !important;
+  min-height: 78px;
+  height: auto;
+  margin-inline: auto;
+  padding: 0 !important;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.site-header .brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+.site-header .brand .brand-logo {
+  display: block;
+  width: 164px !important;
+  max-width: 164px !important;
+  height: auto;
+  max-height: 42px;
+  object-fit: contain;
+}
+.site-header .brand > span {
+  color: #8b9aab;
+  font-weight: 500;
+}
+.site-header .brand > strong {
+  color: #123f68;
+  font-size: .94rem;
+  font-weight: 800;
+}
+.site-header .nav-menu {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  min-width: 0;
+  gap: clamp(12px, 1.45vw, 22px);
+  font-size: .92rem;
+  line-height: 1.25;
+}
+.site-header .nav-menu > a,
+.site-header .nav-menu > details > summary {
+  white-space: nowrap;
+}
+.site-header .nav-menu .btn,
+.site-header .nav-menu .btn-small {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+.site-header .nav-dropdown { position: relative; }
+.site-header .nav-dropdown > summary { cursor: pointer; list-style: none; }
+.site-header .nav-dropdown > summary::-webkit-details-marker { display: none; }
+.site-header .nav-dropdown-menu {
+  z-index: 60;
+}
+@media (max-width: 1100px) {
+  .site-header .nav.container {
+    width: calc(100% - 36px) !important;
+    min-height: 74px;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-block: 12px !important;
+  }
+  .site-header .brand .brand-logo {
+    width: min(164px, 42vw) !important;
+    max-width: min(164px, 42vw) !important;
+  }
+}
+@media (max-width: 560px) {
+  .site-header .nav.container {
+    width: calc(100% - 28px) !important;
+  }
+  .site-header .brand .brand-logo {
+    width: min(148px, 39vw) !important;
+    max-width: min(148px, 39vw) !important;
+  }
+  .site-header .brand > strong { font-size: .86rem; }
+}
