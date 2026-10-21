@@ -437,3 +437,13 @@
     max-width: min(148px, 39vw) !important;
   }
 }
+
+
+/* Do not force logo width or height in the Website / Online Solutions headers */
+.online-solutions-page .site-header .brand .brand-logo,
+.online-solutions-page .site-header .website-brand .brand-logo {
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+}
