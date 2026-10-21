@@ -1726,3 +1726,49 @@ img, video, iframe, canvas, svg { max-width: 100%; }
   .hero-redesign .hero-actions .btn { max-width: 100%; }
   .floating-cta { max-width: calc(100vw - 24px); white-space: nowrap; }
 }
+
+
+/* Contact layout: sticky enquiry card on desktop, stacked flow on smaller screens */
+.contact-grid {
+  display: flex;
+  grid-template-columns: none;
+  gap: 36px;
+  align-items: flex-start;
+}
+.contact-grid > :first-child {
+  flex: .85 1 0;
+  min-width: 0;
+}
+.contact-grid > :last-child {
+  flex: 1.15 1 0;
+  min-width: 0;
+}
+.enquiry-card {
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  min-width: 0;
+  max-height: calc(100vh - 124px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+@media (max-width: 960px) {
+  .contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: stretch;
+  }
+  .contact-grid > :first-child,
+  .contact-grid > :last-child {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .enquiry-card {
+    position: static;
+    top: auto;
+    max-height: none;
+    overflow: visible;
+  }
+}
