@@ -1423,3 +1423,9 @@ body { overflow-x: hidden; }
   .nav-dropdown-menu a { white-space:normal; }
 }
 @media (prefers-reduced-motion:reduce) { .nav-dropdown-menu { animation:none !important; } }
+
+
+/* Compact Zoho Consulting Partner identity in the hero */
+.hero-trust-pill { display:inline-flex; align-items:center; gap:10px; }
+.hero-trust-pill .hero-zoho-logo { display:block; width:48px; max-height:22px; object-fit:contain; }
+.hero-trust-pill > span:not(.trust-dot) { font-weight:800; }
