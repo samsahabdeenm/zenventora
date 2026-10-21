@@ -1,3 +1,6 @@
 User-agent: *
 Allow: /
 Sitemap: https://zenventora.in/sitemap.xml
+
+# AI-readable site context
+Allow: /llms.txt
