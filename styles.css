@@ -1695,3 +1695,34 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   .hero-art-caption { font-size: .61rem; }
   .floating-cta { right: 12px; bottom: 12px; }
 }
+
+
+/* Prevent viewport-level horizontal scrolling while allowing normal vertical page flow. */
+html, body { width: 100%; max-width: 100%; }
+html, body { overflow-x: clip; }
+main, header, footer, section, nav, .container { min-width: 0; max-width: 100%; }
+img, video, iframe, canvas, svg { max-width: 100%; }
+.hero-redesign, .hero-redesign .hero-grid, .hero-art-wrap, .hero-copy,
+.hero-art, .hero-bottom-strip, .site-header .nav, .nav-menu,
+.partner-grid-featured, .contact-grid, .footer-grid {
+  min-width: 0;
+  max-width: 100%;
+}
+@media (max-width: 1120px) {
+  .nav { gap: 14px; }
+  .nav-menu { gap: clamp(8px, 1.4vw, 16px); }
+  .brand { flex-shrink: 0; }
+}
+@media (max-width: 960px) {
+  .nav { flex-wrap: wrap; }
+  .nav-menu { max-width: 100%; }
+}
+@media (max-width: 720px) {
+  .container { width: calc(100% - 32px); }
+  .hero-redesign, .hero-redesign .hero-grid { width: 100%; }
+  .hero-redesign .hero-grid > * { width: 100%; max-width: 100%; }
+  .hero-art-wrap { overflow: clip; }
+  .hero-redesign .hero-actions { flex-wrap: wrap; }
+  .hero-redesign .hero-actions .btn { max-width: 100%; }
+  .floating-cta { max-width: calc(100vw - 24px); white-space: nowrap; }
+}
