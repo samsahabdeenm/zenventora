@@ -2879,3 +2879,67 @@ body.online-solutions-page:not(.website-page) .website-hero-panel > * {
 @media (prefers-reduced-motion: reduce) {
   #what-we-do .card-grid .card, #services .service-list article, #partners .partner-card { transition: none; }
 }
+
+
+/* Fix contrast in the business-customer callout: its white card must use dark, readable text */
+.customer-band .customer-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(24px, 4vw, 54px);
+  padding: clamp(28px, 4vw, 46px);
+  border: 1px solid #d9e8f2;
+  border-radius: 28px;
+  background: #ffffff;
+  color: #15324b;
+  box-shadow: 0 24px 60px rgba(3, 22, 39, .18);
+}
+.customer-band .customer-card > div {
+  max-width: 760px;
+}
+.customer-band .customer-card .eyebrow {
+  color: #087f80;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+.customer-band .customer-card h2 {
+  color: #102b43;
+  line-height: 1.12;
+  letter-spacing: -.035em;
+}
+.customer-band .customer-card p:not(.eyebrow) {
+  color: #526b80;
+  line-height: 1.8;
+}
+.customer-band .customer-card .btn,
+.customer-band .customer-card .btn-light {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 14px 22px;
+  border: 1px solid #123f68;
+  border-radius: 999px;
+  background: #123f68;
+  color: #ffffff;
+  font-weight: 800;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(18, 63, 104, .18);
+}
+.customer-band .customer-card .btn:hover,
+.customer-band .customer-card .btn-light:hover {
+  background: #0a9e9a;
+  border-color: #0a9e9a;
+  color: #ffffff;
+}
+@media (max-width: 760px) {
+  .customer-band .customer-card {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 24px;
+  }
+  .customer-band .customer-card > div { max-width: none; }
+  .customer-band .customer-card .btn { width: 100%; }
+}
