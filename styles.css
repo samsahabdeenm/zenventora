@@ -2445,3 +2445,145 @@ main > .section:not(.soft-bg) {
   .startup-grid > *, .steps > *, .workflow-grid article, .card-grid > .card,
   .upload-menu-card, .pricing-card, .customer-card, .pos-feature-card { padding: 20px; }
 }
+
+
+/* Homepage hero redesign: open, editorial split layout instead of a small centered card */
+#home.hero-redesign {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: clamp(56px, 7vw, 100px) 0 clamp(54px, 6vw, 86px);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 78% 38%, rgba(15, 159, 155, .13), transparent 34%),
+    linear-gradient(110deg, #f7fbfe 0%, #ffffff 48%, #effaf8 100%);
+}
+#home.hero-redesign .container.hero-grid {
+  width: min(1380px, calc(100% - 64px));
+  max-width: 1380px;
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  align-items: center;
+  gap: clamp(30px, 5vw, 84px);
+}
+#home.hero-redesign .hero-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+}
+#home.hero-redesign .hero-copy .eyebrow {
+  margin-bottom: 18px;
+  color: #087f80;
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+#home.hero-redesign .hero-trust-pill {
+  width: fit-content;
+  margin-bottom: 24px;
+  padding: 10px 15px;
+  border: 1px solid #cce9e4;
+  border-radius: 999px;
+  background: rgba(255,255,255,.8);
+  box-shadow: 0 5px 18px rgba(10, 69, 87, .045);
+}
+#home.hero-redesign .hero-copy h1 {
+  max-width: 720px;
+  margin: 0 0 24px;
+  font-size: clamp(3.4rem, 6.1vw, 6.1rem);
+  line-height: .98;
+  letter-spacing: -.075em;
+  text-wrap: balance;
+}
+#home.hero-redesign .hero-copy h1 span {
+  color: #0a9e9a;
+}
+#home.hero-redesign .hero-text {
+  max-width: 600px;
+  margin: 0;
+  color: #52697f;
+  font-size: clamp(1.08rem, 1.5vw, 1.24rem);
+  line-height: 1.85;
+}
+#home.hero-redesign .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+#home.hero-redesign .hero-actions .btn {
+  min-height: 56px;
+  padding-inline: 24px;
+}
+#home.hero-redesign .hero-proof-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+#home.hero-redesign .hero-proof-row > span {
+  padding: 10px 12px;
+  border: 1px solid #dce8f1;
+  border-radius: 12px;
+  background: rgba(255,255,255,.82);
+  color: #4d6378;
+  font-size: .81rem;
+  line-height: 1.4;
+}
+#home.hero-redesign .hero-art-wrap {
+  position: relative;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+#home.hero-redesign .hero-art-glow {
+  position: absolute;
+  inset: 8% 0 2% 6%;
+  border-radius: 42% 58% 56% 44% / 48% 42% 58% 52%;
+  background: linear-gradient(145deg, rgba(214, 248, 242, .92), rgba(225, 240, 252, .7));
+  filter: blur(1px);
+  transform: rotate(-5deg);
+}
+#home.hero-redesign .hero-art {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  max-height: 580px;
+  object-fit: contain;
+  filter: drop-shadow(0 28px 28px rgba(12, 49, 73, .10));
+  transform: translateY(4px);
+}
+#home.hero-redesign .hero-orb { opacity: .3; }
+@media (min-width: 1500px) {
+  #home.hero-redesign .container.hero-grid { width: min(1480px, calc(100% - 100px)); max-width: 1480px; }
+}
+@media (max-width: 960px) {
+  #home.hero-redesign { padding-block: 50px 58px; }
+  #home.hero-redesign .container.hero-grid {
+    width: min(760px, calc(100% - 40px));
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  #home.hero-redesign .hero-copy { max-width: 760px; }
+  #home.hero-redesign .hero-copy h1 { max-width: 740px; font-size: clamp(3rem, 8vw, 5rem); }
+  #home.hero-redesign .hero-art-wrap { width: 100%; max-width: 700px; margin-inline: auto; }
+  #home.hero-redesign .hero-art { max-height: 460px; }
+}
+@media (max-width: 560px) {
+  #home.hero-redesign { padding-block: 38px 42px; }
+  #home.hero-redesign .container.hero-grid { width: calc(100% - 32px); }
+  #home.hero-redesign .hero-copy h1 { font-size: clamp(2.7rem, 12vw, 3.7rem); }
+  #home.hero-redesign .hero-actions { display: grid; grid-template-columns: 1fr; }
+  #home.hero-redesign .hero-actions .btn { width: 100%; justify-content: center; }
+  #home.hero-redesign .hero-proof-row { display: grid; grid-template-columns: 1fr; }
+  #home.hero-redesign .hero-art { max-height: 340px; }
+}
