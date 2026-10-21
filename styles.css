@@ -1033,15 +1033,9 @@ textarea {
     background: #fff;
     box-shadow: var(--shadow);
 }
-.zoho-brand-lockup { display: flex; align-items: center; gap: 4px; align-self: start; }
-.zoho-tile {
-    display: grid; place-items: center; width: 38px; height: 38px; border-radius: 9px;
-    color: #fff; font-size: 1.35rem; font-weight: 800; box-shadow: 0 5px 12px rgba(15,35,55,.12);
-}
-.zoho-red { background: #e42527; }
-.zoho-green { background: #049949; }
-.zoho-blue { background: #236db4; }
-.zoho-yellow { background: #f9b21d; }
+.zoho-brand-lockup { display: flex; align-items: center; align-self: start; min-width: 150px; }
+.zoho-brand-lockup img { display: block; width: 148px; max-width: 100%; height: auto; object-fit: contain; }
+
 .zoho-partner-copy h2 { margin-bottom: 14px; }
 .zoho-partner-copy > p:not(.eyebrow) { max-width: 680px; color: var(--muted); font-size: 1.05rem; }
 .zoho-partner-copy .btn { margin-top: 4px; }
@@ -1056,14 +1050,7 @@ textarea {
 .partner-card-featured .partner-logo svg { max-width: 100%; height: auto; }
 .partner-card-featured h3 { font-size: 1.35rem; }
 .partner-card-featured p { flex: 1; }
-.zoho-pos-wordmark { gap: 12px; }
-.zoho-mini-mark { display: grid; grid-template-columns: repeat(2, 20px); gap: 3px; }
-.zoho-mini-mark i { display: block; width: 20px; height: 20px; border-radius: 4px; }
-.zoho-mini-mark i:nth-child(1) { background: #e42527; }
-.zoho-mini-mark i:nth-child(2) { background: #049949; }
-.zoho-mini-mark i:nth-child(3) { background: #236db4; }
-.zoho-mini-mark i:nth-child(4) { background: #f9b21d; }
-.zoho-pos-name { display: flex; align-items: baseline; gap: 7px; color: #102033; font-size: 1.8rem; letter-spacing: -.06em; }
-.zoho-pos-name b { color: #236db4; font-size: 1.35rem; letter-spacing: .01em; }
+.zoho-pos-wordmark { display: flex; align-items: center; width: 100%; }
+.zoho-pos-official-logo { display: block; width: min(100%, 230px); max-height: 76px; object-fit: contain; object-position: left center; }
 @media (max-width: 960px) { .zoho-partner-card { grid-template-columns: 1fr; gap: 22px; } .zoho-partner-mark { display: none; } }
-@media (max-width: 620px) { .partner-grid-featured { grid-template-columns: 1fr; } .zoho-tile { width: 32px; height: 32px; font-size: 1.1rem; } .zoho-pos-name { font-size: 1.6rem; } }
+@media (max-width: 620px) { .partner-grid-featured { grid-template-columns: 1fr; } .zoho-brand-lockup img { width: 126px; } .zoho-pos-official-logo { width: min(100%, 205px); } }
