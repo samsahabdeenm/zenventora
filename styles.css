@@ -3210,3 +3210,21 @@ body.online-solutions-page:not(.website-page) .website-hero-panel > * {
     border-radius: 22px;
   }
 }
+
+
+/* Ensure website hero artwork is image-only: hide all leftover overlay cards */
+.online-solutions-page.website-page .website-hero-panel.website-hero-image {
+  display: block !important;
+  position: relative;
+  overflow: hidden;
+  background-image: url("https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1600&q=90") !important;
+  background-color: #eaf2f7;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.online-solutions-page.website-page .website-hero-panel.website-hero-image > *,
+.online-solutions-page.website-page .website-hero-panel.website-hero-image::before,
+.online-solutions-page.website-page .website-hero-panel.website-hero-image::after {
+  display: none !important;
+  content: none !important;
+}
