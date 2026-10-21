@@ -3457,3 +3457,145 @@ body.online-solutions-page:not(.website-page) .website-hero-panel > * {
     max-height: none !important;
   }
 }
+
+
+/* Zenventora visual system: clear hierarchy, less clutter, premium business-first cards */
+:root {
+  --zv-ink: #102b43;
+  --zv-blue: #123f68;
+  --zv-teal: #079b98;
+  --zv-muted: #526b80;
+  --zv-line: #dce8ef;
+  --zv-surface: #f4f8fb;
+}
+.section .container {
+  width: min(1280px, calc(100% - 48px));
+  margin-inline: auto;
+}
+.section .container.narrow,
+.container.narrow {
+  width: min(820px, calc(100% - 48px));
+}
+.section { scroll-margin-top: 96px; }
+.section-heading {
+  max-width: 800px;
+  margin: 0 auto 34px;
+}
+.section-heading .eyebrow,
+.website-hero-copy .eyebrow,
+.website-intro .eyebrow {
+  color: var(--zv-teal);
+  font-size: .76rem;
+  font-weight: 850;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.section-heading h2,
+.website-intro h2 {
+  color: var(--zv-ink);
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
+.section-heading > p:last-child {
+  color: var(--zv-muted);
+  max-width: 680px;
+}
+#what-we-do .card-grid .card,
+.web-service-card,
+.vertical-card,
+.partner-card,
+.steps article,
+.startup-grid article {
+  border: 1px solid var(--zv-line);
+  border-radius: 22px;
+  box-shadow: 0 10px 28px rgba(16, 43, 67, .055);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+#what-we-do .card-grid .card:hover,
+.web-service-card:hover,
+.vertical-card:hover,
+.partner-card:hover,
+.steps article:hover,
+.startup-grid article:hover {
+  transform: translateY(-4px);
+  border-color: rgba(7, 155, 152, .4);
+  box-shadow: 0 18px 38px rgba(16, 43, 67, .10);
+}
+#what-we-do .card-grid .card h3,
+.web-service-card h3,
+.vertical-card h3 {
+  color: var(--zv-ink);
+  letter-spacing: -.02em;
+}
+#what-we-do .card-grid .card p,
+.web-service-card p,
+.vertical-card p,
+.steps article p,
+.partner-card p {
+  color: var(--zv-muted);
+  line-height: 1.65;
+}
+#what-we-do .card-grid .card .icon {
+  display: inline-grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: #e7f8f5;
+  color: var(--zv-teal);
+  font-size: 1.25rem;
+}
+#what-we-do .card-grid .card a,
+.vertical-card a,
+.partner-card .partner-link {
+  color: var(--zv-blue);
+  font-weight: 800;
+  text-decoration: none;
+}
+#what-we-do .card-grid .card a:hover,
+.vertical-card a:hover,
+.partner-card .partner-link:hover { color: var(--zv-teal); }
+.website-hero-grid {
+  align-items: center;
+  gap: clamp(36px, 5vw, 76px);
+}
+.website-hero-copy h1 {
+  letter-spacing: -.055em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+.website-hero-copy > p:not(.eyebrow):not(.website-price-note) {
+  color: var(--zv-muted);
+  line-height: 1.72;
+}
+.website-hero-lead {
+  color: var(--zv-ink) !important;
+  font-weight: 750;
+  line-height: 1.5 !important;
+}
+.website-price-note {
+  color: var(--zv-muted);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+.website-intro .narrow { text-align: center; }
+.website-intro .narrow > p:last-child {
+  color: var(--zv-muted);
+  line-height: 1.75;
+}
+.faq-list details {
+  border-color: var(--zv-line);
+  border-radius: 14px;
+}
+.faq-list summary { color: var(--zv-ink); font-weight: 750; }
+@media (max-width: 760px) {
+  .section .container,
+  .section .container.narrow,
+  .container.narrow { width: calc(100% - 32px); }
+  .section-heading { margin-bottom: 24px; }
+  #what-we-do .card-grid .card,
+  .web-service-card,
+  .vertical-card,
+  .partner-card,
+  .steps article { border-radius: 18px; }
+}
