@@ -3766,3 +3766,120 @@ body.online-solutions-page:not(.website-page) .website-hero-panel > * {
     top: 13px;
   }
 }
+
+
+/* Client/project sections: center the heading copy and keep the descriptive line
+   centered beneath the title, with a consistent readable width on every page. */
+.zv-client-section .zv-client-heading {
+  width: 100%;
+  text-align: center !important;
+  margin-inline: auto;
+}
+.zv-client-section .zv-client-heading > div:first-child {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+.zv-client-section .zv-client-heading .eyebrow,
+.zv-client-section .zv-client-heading h2,
+.zv-client-section .zv-client-heading p {
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.zv-client-section .zv-client-heading h2 {
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+.zv-client-section .zv-client-heading > div:first-child > p:last-child {
+  max-width: 900px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.65;
+}
+.zv-client-section .zv-client-slider {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+.zv-client-section .zv-client-track {
+  min-width: 0;
+  box-sizing: border-box;
+}
+.zv-client-section .zv-client-slide {
+  box-sizing: border-box;
+  min-width: 0;
+  overflow: hidden;
+  text-align: center !important;
+}
+.zv-client-section .zv-client-slide .zv-client-kind {
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: calc(100% - 32px);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 2;
+  margin: 0;
+}
+.zv-client-section .zv-client-slide .zv-client-logo-wrap {
+  margin-top: 26px;
+}
+.zv-client-section .zv-client-slide h3,
+.zv-client-section .zv-client-slide p {
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.zv-client-section .zv-client-slide p {
+  max-width: 360px;
+  width: 100%;
+}
+
+/* Different, coordinated badge colours make each Zenventora service easy to identify. */
+body.website-page .zv-client-section .zv-client-kind {
+  color: #087f78;
+  background: #e5f7f3;
+  border: 1px solid #c7eee6;
+}
+body.online-solutions-page:not(.website-page) .zv-client-section .zv-client-kind {
+  color: #3154a4;
+  background: #eaf0ff;
+  border: 1px solid #d6e1ff;
+}
+body.emenu-page .zv-client-section .zv-client-kind {
+  color: #9a5b12;
+  background: #fff0d9;
+  border: 1px solid #f7dfb9;
+}
+body:not(.website-page):not(.online-solutions-page):not(.emenu-page) .zv-client-section .zv-client-kind {
+  color: #087f78;
+  background: #e5f7f3;
+  border: 1px solid #c7eee6;
+}
+
+@media (max-width: 680px) {
+  .zv-client-section .zv-client-heading h2 {
+    margin-bottom: 12px;
+  }
+  .zv-client-section .zv-client-heading > div:first-child > p:last-child {
+    max-width: 100%;
+    padding-inline: 8px;
+  }
+  .zv-client-section .zv-client-slide .zv-client-kind {
+    top: 14px;
+    font-size: 0.68rem;
+    padding: 7px 12px;
+  }
+  .zv-client-section .zv-client-slide .zv-client-logo-wrap {
+    margin-top: 24px;
+  }
+}
