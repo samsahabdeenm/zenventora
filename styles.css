@@ -3691,3 +3691,14 @@ body.online-solutions-page:not(.website-page) .website-hero-panel > * {
 #partners .partner-card .partner-link :where(span, svg, i) {
   color: inherit !important;
 }
+
+
+/* Footer logo link only: give the brand mark a neat, contained backing. */
+.site-footer a.brand.footer-brand {
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 12px;
+  height: unset;
+  width: fit-content;
+  margin-bottom: 20px;
+}
