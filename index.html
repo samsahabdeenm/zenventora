@@ -114,6 +114,19 @@
     ]
   }
   </script>
+
+<style id="zenventora-mobile-nav-fix">
+@media (max-width:1120px) {
+  html body header.site-header .nav-menu[data-nav-menu] { display:none !important; visibility:hidden !important; opacity:0 !important; pointer-events:none !important; }
+  html body header.site-header .nav-menu[data-nav-menu].open { display:flex !important; visibility:visible !important; opacity:1 !important; pointer-events:auto !important; }
+  html body header.site-header .brand > span,
+  html body header.site-header .brand > strong { display:none !important; visibility:hidden !important; }
+  html body header.site-header .brand { min-width:0 !important; max-width:calc(100% - 108px) !important; overflow:hidden; }
+  html body header.site-header .brand .brand-logo { max-width:100% !important; width:auto !important; }
+  html body header.site-header .nav-menu[data-nav-menu] .nav-dropdown-menu { display:none !important; position:static !important; }
+  html body header.site-header .nav-menu[data-nav-menu] .nav-dropdown[open] > .nav-dropdown-menu { display:grid !important; }
+}
+</style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
