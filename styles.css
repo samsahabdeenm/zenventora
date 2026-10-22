@@ -3634,3 +3634,17 @@ body.online-solutions-page:not(.website-page) .website-hero-panel > * {
 @media(prefers-reduced-motion:reduce) {
  .zv-client-track,.zv-slider-controls button,.zv-slider-dot { transition:none !important; }
 }
+
+
+/* Global CTA label consistency: keep CTA text white in every state and on every page. */
+:where(a.btn, button.btn, .floating-cta, .pos-cta-actions .btn, .hero-actions .btn, .cta-area .btn, .customer-band .btn, .site-header .nav-menu .btn) {
+  color: #fff !important;
+}
+:where(a.btn, button.btn, .floating-cta, .pos-cta-actions .btn, .hero-actions .btn, .cta-area .btn, .customer-band .btn, .site-header .nav-menu .btn):hover,
+:where(a.btn, button.btn, .floating-cta, .pos-cta-actions .btn, .hero-actions .btn, .cta-area .btn, .customer-band .btn, .site-header .nav-menu .btn):focus-visible,
+:where(a.btn, button.btn, .floating-cta, .pos-cta-actions .btn, .hero-actions .btn, .cta-area .btn, .customer-band .btn, .site-header .nav-menu .btn):active {
+  color: #fff !important;
+}
+:where(a.btn, button.btn, .floating-cta, .pos-cta-actions .btn, .hero-actions .btn, .cta-area .btn, .customer-band .btn, .site-header .nav-menu .btn) :where(span, svg, i) {
+  color: inherit !important;
+}
