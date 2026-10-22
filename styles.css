@@ -3636,20 +3636,6 @@ body.online-solutions-page:not(.website-page) .website-hero-panel > * {
 }
 
 
-/* Global CTA label consistency: keep CTA text white in every state and on every page. */
-:where(a.btn, button.btn, .floating-cta, .pos-cta-actions .btn, .hero-actions .btn, .cta-area .btn, .customer-band .btn, .site-header .nav-menu .btn) {
-  color: #fff !important;
-}
-:where(a.btn, button.btn, .floating-cta, .pos-cta-actions .btn, .hero-actions .btn, .cta-area .btn, .customer-band .btn, .site-header .nav-menu .btn):hover,
-:where(a.btn, button.btn, .floating-cta, .pos-cta-actions .btn, .hero-actions .btn, .cta-area .btn, .customer-band .btn, .site-header .nav-menu .btn):focus-visible,
-:where(a.btn, button.btn, .floating-cta, .pos-cta-actions .btn, .hero-actions .btn, .cta-area .btn, .customer-band .btn, .site-header .nav-menu .btn):active {
-  color: #fff !important;
-}
-:where(a.btn, button.btn, .floating-cta, .pos-cta-actions .btn, .hero-actions .btn, .cta-area .btn, .customer-band .btn, .site-header .nav-menu .btn) :where(span, svg, i) {
-  color: inherit !important;
-}
-
-
 /* Client showcase refinement: centered cards, stronger testimonial-style presentation */
 .zv-client-section .container { max-width: 1240px; }
 .zv-client-heading { align-items:center; }
@@ -3691,4 +3677,17 @@ body.online-solutions-page:not(.website-page) .website-hero-panel > * {
 @media(max-width:680px) {
  .zv-client-slide { padding-top:40px; }
  .zv-client-slide .zv-client-kind { top:13px; }
+}
+
+
+/* Only the teal/green partner CTAs for Zoho POS and GoZen use white text.
+   Leave white/light CTAs and every other button in their original styles. */
+#partners .partner-card .partner-link,
+#partners .partner-card .partner-link:hover,
+#partners .partner-card .partner-link:focus-visible,
+#partners .partner-card .partner-link:active {
+  color: #fff !important;
+}
+#partners .partner-card .partner-link :where(span, svg, i) {
+  color: inherit !important;
 }
