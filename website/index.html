@@ -43,9 +43,10 @@
    track.style.transform='translate3d('+(-index*step)+'px,0,0)';
    [...dotsWrap.children].forEach((d,i)=>{d.classList.toggle('is-active',i===index);d.setAttribute('aria-current',i===index?'true':'false')});
    const controls=section.querySelector('.zv-slider-controls');
-   controls.hidden=maxIndex()===0;
-   dotsWrap.hidden=maxIndex()===0;
-   section.classList.toggle('zv-client-section--static',maxIndex()===0);
+   const staticShowcase=cards.length<=2;
+   controls.hidden=staticShowcase||maxIndex()===0;
+   dotsWrap.hidden=staticShowcase||maxIndex()===0;
+   section.classList.toggle('zv-client-section--static',staticShowcase||maxIndex()===0);
    section.querySelector('.zv-slider-prev').disabled=index===0;
    section.querySelector('.zv-slider-next').disabled=index===maxIndex();
   }
