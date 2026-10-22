@@ -241,7 +241,8 @@
       </div>
     </section>
 
-    <section class="section customer-band website-cta">
+    <section class="zv-client-section section" id="online-client-work" aria-label="Online presence, shaped around the business"><div class="container"><div class="zv-client-heading"><div><p class="eyebrow">Selected client work</p><h2>Online presence, shaped around the business</h2><p>Clear digital touchpoints that help customers understand a business and take the next step.</p></div><div class="zv-slider-controls"><button type="button" class="zv-slider-prev" aria-label="Previous client projects">←</button><button type="button" class="zv-slider-next" aria-label="Next client projects">→</button></div></div><div class="zv-client-slider" tabindex="0" aria-label="Client project carousel"><div class="zv-client-track"><article class="zv-client-slide"><div class="zv-client-logo-wrap"><img src="https://ularsuvai.in/images/logo.jpg.jpeg" alt="Ularsuvai logo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="zv-logo-fallback">Ularsuvai</span></div><span class="zv-client-kind">Online presence</span><h3>Ularsuvai</h3><p>Online discovery for a product brand, with clear product information and a direct route for customer enquiries.</p></article><article class="zv-client-slide"><div class="zv-client-logo-wrap"><img src="https://askerlandpromotors.online/images/logo.png.jpeg" alt="Askerland Promotors logo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="zv-logo-fallback">Askerland Promotors</span></div><span class="zv-client-kind">Online presence</span><h3>Askerland Promotors</h3><p>A digital business presence that helps visitors understand the company and find a clear contact route.</p></article></div></div><div class="zv-slider-dots" aria-label="Choose a client project"></div></div></section>
+<section class="section customer-band website-cta">
       <div class="container customer-card">
         <div><p class="eyebrow">Ready to start?</p><h2>Tell us what you are building.</h2><p>Whether it is a new business website, a startup idea, a local business presence or a vertical-specific requirement, start with one conversation.</p></div>
         <a class="btn btn-light" href="enquiry.html">Contact Zenventora</a>
@@ -287,5 +288,41 @@
 
   <a class="floating-cta" href="enquiry.html">Discuss Your Requirement</a>
   <script src="../script.js" defer></script>
+<script>
+(function(){
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ document.querySelectorAll('.zv-client-section').forEach(section=>{
+  const slider=section.querySelector('.zv-client-slider'), track=section.querySelector('.zv-client-track');
+  const cards=[...track.children], dotsWrap=section.querySelector('.zv-slider-dots');
+  if(!slider||cards.length<1)return;
+  let index=0,timer=null;
+  const perView=()=>window.matchMedia('(max-width: 680px)').matches?1:(window.matchMedia('(max-width: 980px)').matches?2:3);
+  const maxIndex=()=>Math.max(0,cards.length-perView());
+  function render(){
+   index=Math.min(index,maxIndex());
+   const card=cards[0], gap=parseFloat(getComputedStyle(track).columnGap||getComputedStyle(track).gap)||20;
+   const step=card.getBoundingClientRect().width+gap;
+   track.style.transform='translate3d('+(-index*step)+'px,0,0)';
+   [...dotsWrap.children].forEach((d,i)=>{d.classList.toggle('is-active',i===index);d.setAttribute('aria-current',i===index?'true':'false')});
+   section.querySelector('.zv-slider-prev').disabled=index===0;
+   section.querySelector('.zv-slider-next').disabled=index===maxIndex();
+  }
+  function buildDots(){
+   dotsWrap.replaceChildren();
+   for(let i=0;i<=maxIndex();i++){const b=document.createElement('button');b.type='button';b.className='zv-slider-dot';b.setAttribute('aria-label','Show client projects '+(i+1));b.addEventListener('click',()=>{index=i;render();restart()});dotsWrap.append(b)}
+  }
+  function next(){index=index>=maxIndex()?0:index+1;render()}
+  function stop(){if(timer)window.clearInterval(timer);timer=null}
+  function restart(){stop();if(!reduced&&maxIndex()>0&&!section.matches(':hover')&&!section.contains(document.activeElement))timer=window.setInterval(next,4500)}
+  section.querySelector('.zv-slider-prev').addEventListener('click',()=>{index=Math.max(0,index-1);render();restart()});
+  section.querySelector('.zv-slider-next').addEventListener('click',()=>{index=index>=maxIndex()?0:index+1;render();restart()});
+  section.addEventListener('mouseenter',stop);section.addEventListener('mouseleave',restart);
+  section.addEventListener('focusin',stop);section.addEventListener('focusout',restart);
+  slider.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){index=Math.min(maxIndex(),index+1);render();restart()}if(e.key==='ArrowLeft'){index=Math.max(0,index-1);render();restart()}});
+  window.addEventListener('resize',()=>{buildDots();render()});
+  buildDots();render();restart();
+ });
+})();
+</script>
 </body>
 </html>
