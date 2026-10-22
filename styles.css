@@ -3680,3 +3680,15 @@ body.online-solutions-page:not(.website-page) .website-hero-panel > * {
 .site-header .brand.website-brand > span,
 .site-header .brand.website-brand > strong { display:inline-flex; align-items:center; visibility:visible; opacity:1; }
 .site-header .brand.website-brand > strong { white-space:nowrap; }
+
+
+/* Put each service label at the top edge of its client card, like a deliberate project badge. */
+.zv-client-slide { position:relative; padding-top:42px; }
+.zv-client-slide .zv-client-kind { position:absolute; top:15px; left:50%; transform:translateX(-50%); white-space:nowrap; }
+.zv-client-logo-wrap { margin-top:12px; }
+.zv-emenu-client-track { justify-content:center; }
+.zv-emenu-client .zv-client-slide { max-width:500px; margin-inline:auto; }
+@media(max-width:680px) {
+ .zv-client-slide { padding-top:40px; }
+ .zv-client-slide .zv-client-kind { top:13px; }
+}
