@@ -4013,3 +4013,21 @@ body:not(.website-page):not(.online-solutions-page):not(.emenu-page) .zv-client-
 .zv-client-section .zv-client-slide .zv-kind-online { color:#3154a4 !important; background:#eaf0ff !important; border:1px solid #d6e1ff !important; }
 .zv-client-section .zv-client-slide .zv-kind-emenu { color:#9a5b12 !important; background:#fff0d9 !important; border:1px solid #f7dfb9 !important; }
 @media (max-width:680px) { .zv-client-section .zv-client-slide .zv-client-kind { top:10px !important; right:10px !important; } }
+
+
+/* Homepage client badges: give each service label its own distinct colour. */
+body:not(.website-page):not(.online-solutions-page):not(.emenu-page) .zv-client-section .zv-client-slide .zv-kind-website {
+  color: #087f78 !important;
+  background: #e5f7f3 !important;
+  border: 1px solid #c7eee6 !important;
+}
+body:not(.website-page):not(.online-solutions-page):not(.emenu-page) .zv-client-section .zv-client-slide .zv-kind-online {
+  color: #3154a4 !important;
+  background: #eaf0ff !important;
+  border: 1px solid #d6e1ff !important;
+}
+body:not(.website-page):not(.online-solutions-page):not(.emenu-page) .zv-client-section .zv-client-slide .zv-kind-emenu {
+  color: #9a5b12 !important;
+  background: #fff0d9 !important;
+  border: 1px solid #f7dfb9 !important;
+}
