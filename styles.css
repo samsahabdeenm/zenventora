@@ -3947,3 +3947,19 @@ body:not(.website-page):not(.online-solutions-page):not(.emenu-page) .zv-client-
     font-size: .68rem;
   }
 }
+
+
+/* Client category badges: pin neatly to the top-right corner of each card. */
+.zv-client-section .zv-client-slide { padding-top: 64px !important; }
+.zv-client-section .zv-client-slide .zv-client-kind {
+  top: 10px !important; right: 10px !important; left: auto !important;
+  transform: none !important; margin: 0 !important; border-radius: 10px !important;
+}
+body.website-page .zv-client-section .zv-client-slide .zv-client-kind { color:#087f78 !important; background:#e5f7f3 !important; border:1px solid #c7eee6 !important; }
+body.online-solutions-page:not(.website-page) .zv-client-section .zv-client-slide .zv-client-kind { color:#3154a4 !important; background:#eaf0ff !important; border:1px solid #d6e1ff !important; }
+body.emenu-page .zv-client-section .zv-client-slide .zv-client-kind { color:#9a5b12 !important; background:#fff0d9 !important; border:1px solid #f7dfb9 !important; }
+body:not(.website-page):not(.online-solutions-page):not(.emenu-page) .zv-client-section .zv-client-slide .zv-client-kind { color:#087f78 !important; background:#e5f7f3 !important; border:1px solid #c7eee6 !important; }
+@media(max-width:680px) {
+ .zv-client-section .zv-client-slide { padding-top:58px !important; }
+ .zv-client-section .zv-client-slide .zv-client-kind { top:8px !important; right:8px !important; font-size:.65rem !important; padding:6px 9px !important; }
+}
