@@ -3883,3 +3883,9 @@ body:not(.website-page):not(.online-solutions-page):not(.emenu-page) .zv-client-
     margin-top: 24px;
   }
 }
+
+
+/* Keep client testimonial/project description paragraphs centered under their headings. */
+.zv-client-heading p {
+  margin: 0 auto !important;
+}
