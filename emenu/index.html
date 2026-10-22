@@ -70,6 +70,38 @@
   }
 }
 </style>
+<style id="zenventora-emenu-mobile-brand-fix">
+@media screen and (max-width: 1120px) {
+  header.site-header nav.nav a.brand.emenu-brand > span,
+  header.site-header nav.nav a.brand.emenu-brand > strong {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    max-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  header.site-header nav.nav a.brand.emenu-brand {
+    gap: 0 !important;
+    min-width: 0 !important;
+    max-width: calc(100% - 112px) !important;
+    overflow: hidden !important;
+  }
+  header.site-header nav.nav {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+  }
+  header.site-header nav.nav .nav-toggle {
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+  }
+}
+</style>
 </head>
 <body class="emenu-page">
   <a class="skip-link" href="#main">Skip to content</a>
