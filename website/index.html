@@ -14,6 +14,30 @@
   html body header.site-header .nav-menu[data-nav-menu] .nav-dropdown[open] > .nav-dropdown-menu { display:grid !important; }
 }
 </style>
+<style id="zenventora-mobile-brand-label-fix">
+@media screen and (max-width: 1120px) {
+  header.site-header nav.nav a.brand.website-brand > span,
+  header.site-header nav.nav a.brand.website-brand > strong,
+  header.site-header nav.nav a.brand.emenu-brand > span,
+  header.site-header nav.nav a.brand.emenu-brand > strong {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    max-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  header.site-header nav.nav a.brand.website-brand,
+  header.site-header nav.nav a.brand.emenu-brand {
+    gap: 0 !important;
+    min-width: 0 !important;
+    max-width: calc(100% - 112px) !important;
+    overflow: hidden !important;
+  }
+}
+</style>
 </head>
 <body class="online-solutions-page website-page"><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><nav class="nav container" aria-label="Primary navigation"><a class="brand website-brand" href="../" aria-label="ZenVentora home"><img class="brand-logo" src="../assets/zenventora-logo.svg" alt="Official ZenVentora logo"><span aria-hidden="true">/</span><strong>Website</strong></a><button class="nav-toggle" type="button" aria-controls="nav-menu" aria-expanded="false" data-nav-toggle>Menu</button><div id="nav-menu" class="nav-menu" data-nav-menu><details class="nav-dropdown"><summary>Services</summary><div class="nav-dropdown-menu"><a href="../online-solutions/">Online Solutions</a><a href="./" class="active" aria-current="page">Website</a><a href="../emenu/">eMenu</a></div></details><a href="#website-types">Website Types</a><a href="#search-ready">SEO &amp; AI Search</a><a href="#process">How It Works</a><a href="#faq">FAQ</a><a class="btn btn-primary btn-small" href="enquiry.html">Get a Website Quote</a></div></nav></header>
 <main id="main">
