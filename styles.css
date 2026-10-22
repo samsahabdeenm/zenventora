@@ -3702,3 +3702,67 @@ body.online-solutions-page:not(.website-page) .website-hero-panel > * {
   width: fit-content;
   margin-bottom: 20px;
 }
+
+
+/* Final testimonial alignment pass: keep every client card centered across all pages. */
+.zv-client-section .zv-client-heading,
+.zv-client-section .zv-client-heading > div,
+.zv-client-section .zv-client-heading .eyebrow,
+.zv-client-section .zv-client-heading h2,
+.zv-client-section .zv-client-heading p,
+.zv-client-section .zv-client-slide,
+.zv-client-section .zv-client-slide h3,
+.zv-client-section .zv-client-slide p {
+  text-align: center !important;
+}
+.zv-client-section .zv-client-heading > div:first-child {
+  width: 100%;
+  margin-inline: auto;
+}
+.zv-client-section .zv-client-slide {
+  align-items: center;
+}
+.zv-client-section .zv-client-slide .zv-client-kind {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  white-space: nowrap;
+}
+.zv-client-section .zv-client-slide .zv-client-logo-wrap {
+  width: 100%;
+  justify-content: center;
+}
+.zv-client-section .zv-client-slide .zv-client-logo-wrap img {
+  object-position: center;
+}
+.zv-client-section .zv-client-slide p {
+  width: 100%;
+  max-width: 360px;
+  margin-inline: auto;
+}
+.zv-client-section .zv-client-section--static .zv-client-track,
+.zv-client-section--static .zv-client-track {
+  justify-content: center;
+}
+.zv-client-section--static .zv-slider-controls,
+.zv-client-section--static .zv-slider-dots {
+  display: none !important;
+}
+.zv-emenu-client .zv-client-track {
+  justify-content: center;
+}
+.zv-emenu-client .zv-client-slide {
+  width: 100%;
+  max-width: 500px;
+  margin-inline: auto;
+}
+@media (max-width: 680px) {
+  .zv-client-section .zv-client-slide {
+    padding-top: 42px;
+  }
+  .zv-client-section .zv-client-slide .zv-client-kind {
+    top: 13px;
+  }
+}
